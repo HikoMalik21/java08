@@ -6,28 +6,64 @@
     <title>Document</title>
 </head>
 <style>
-    .button {
-        display: grid;
-        text-align: center;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
 
+    * {
+       margin: 0;
+       padding: 0; 
     }
 
+    body{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: yellow;
+    }
     
+    .colors {
+        display: table-cell;
+        width: 150px;
+        height: 150px;
+        margin: 0 1px;
+        cursor: pointer;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+
+    .clr1{
+        background-color: grey;
+    }
+
+    .clr2{
+        background-color: red;
+    }
+
+    .clr3{
+        background-color: blue;
+    }
+
+    .clr4{
+        background-color: yellow;
+    }
+
+    h1{
+        margin-left: 120px;
+    }
 </style>
 
 <body>
 
-    <div>
-        <h1>Color Scheme Switcher</h1>
-        <button onclick="myFunction()" style="background-color: gray;" id="grey" class="button"></button>       
-        <button onclick="myFunction()" style="background-color: red;" id="red"  class="button"></button>
-        <button onclick="myFunction()" style="background-color: blue;" id="blue" class="button"></button>
-        <button onclick="myFunction()" style="background-color: yellow;" id="yellow" class="button"></button>
-        <h3> Try clicking on one the colors above to change the backgroud color of this page!</h3>
-    </div>
+        <div class="container">
+          <h1>Color Scheme Switcher</h1> 
+          <br> 
+        <button onclick="changeBackground('grey')" class="colors clr1"></button>
+        <button onclick="changeBackground('red')" class="colors clr2"></button>
+        <button onclick="changeBackground('blue')" class="colors clr3"></button>
+        <button onclick="changeBackground('yellow')" class="colors clr4"></button>
+        
+        <br> <br>
+         <h3> Try clicking on one the colors above to change the backgroud color of this page!</h3>
+        </div>
     
    
 </body>
