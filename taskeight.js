@@ -7,13 +7,6 @@
 
   //myFunction();
 
-  let result = document.getElementById("grey");
- 
-        function changeColor(color) {
-            document.body.style.background = color;
-        }
- 
-        function myFunc() {
-            changeColor('grey');
-            result.innerHTML = "Background Color changed";
-        }        
+function changeBackground(color){
+  document.querySelector('.container').style.backgroundColor=color;
+}    
